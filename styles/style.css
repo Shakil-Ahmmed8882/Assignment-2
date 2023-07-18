@@ -36,6 +36,12 @@
   color: var(--clr-primary);
 }
 
+.gradient-txt {
+  background: var(--title-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -56,7 +62,7 @@ h5,
 h6 {
   font-family: Arial;
   font-weight: 700;
-  line-height: 1.2em;
+  line-height: 1.4em;
 }
 
 h1 {
@@ -152,6 +158,10 @@ main {
   gap: 10px;
 }
 
+.margin {
+  margin: 8rem auto;
+}
+
 /* ========================= || HEADER SECTION STYLES============================== */
 
 .header__nav {
@@ -211,9 +221,6 @@ main {
 }
 
 .banner__h1-title {
-  background: var(--title-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   font-size: 4rem;
   font-weight: var(--fw-800);
   margin: 10px 0;
@@ -239,6 +246,140 @@ main {
   flex-basis: 50%;
   flex-shrink: 0;
 }
+
+/*==================== || BANNER SECTION STYLES ENDS ================= */
+/*==================== || ADVENTURE SECTION STYLES STARTS================= */
+
+.adventure {
+  text-align: center;
+}
+
+.adventure p {
+  margin-top: 5px;
+}
+
+.adventure__card-container {
+  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 4rem;
+}
+
+.adventure__card {
+  box-shadow: 1px 2px 10px rgba(8, 7, 7, 0.181);
+  border-radius: 10px;
+}
+
+.adventure__card P {
+  padding: 5px 7px 10px 7px;
+  font-size: 1.5rem;
+}
+
+.adventure__card img {
+  width: 100%;
+}
+
+/* ============ || PLAY BUTTON STYLES ==================== */
+.adventure__card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.adventure__card {
+  width: 240px;
+  position: relative;
+  background-color: #f2f2f2;
+  overflow: hidden;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.adventure__card:hover .card-overlay {
+  opacity: 1;
+}
+
+.adventure__card img {
+  width: 100%;
+  height: auto;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  display: none;
+}
+
+.adventure__card:hover .play-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.adventure__card:hover .description {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+}
+
+.play-icon {
+  font-size: 30px;
+  color: #fff;
+}
+
+/* ============  PLAY BUTTON STYLES ENDS ==================== */
+/* ============  NO DOWNLOAD STYLES STARTS ==================== */
+.no-download {
+  gap: 10rem;
+}
+.img-wall {
+  margin: 0 2rem;
+}
+
+.no-download__content {
+  z-index: 22;
+}
+
+.no-download__content h2 {
+  font-size: max(3rem, 100%);
+}
+
+.no-download__img-wrapper {
+  position: relative;
+}
+
+.no-download__parent-img {
+  position: relative;
+}
+
+.no-download__child-img {
+  position: absolute;
+  bottom: -5rem;
+  left: -9rem;
+}
+
+.no-download__child-img {
+  width: clamp(180px, 5vh, 250px);
+}
+/* ============  NO DOWNLOAD STYLES ENDS==================== */
+
 /* ============================ || BREAKPOINTS ===================== */
 /* || TM - Tablet (portrait) */
 @media (max-width: 768px) {
@@ -250,7 +391,8 @@ main {
     width: 100%;
   }
 
-  .banner {
+  .banner,
+  .no-download {
     padding: 0;
     flex-direction: column-reverse;
     row-gap: 100px;
@@ -260,15 +402,31 @@ main {
   .banner__content {
     background-color: rgba(227, 48, 140, 0.079);
     width: 100%;
-    padding: 2rem;
+    padding: 6.5rem 2rem;
+    border-radius: 20px 20px 0 0;
   }
   .banner__img {
     margin-top: 5rem;
     width: 70%;
     margin-inline: auto;
   }
-}
 
+  /* NO DOWNLOADS */
+  .no-download__content {
+    padding: 6.5rem 2rem;
+    background-color: rgba(227, 48, 140, 0.079);
+  }
+
+  .no-download .no-download__img-wrapper {
+    width: 70%;
+    margin-left: auto;
+  }
+
+  .no-download__child-img {
+    left: -15rem;
+    width: 60%;
+  }
+}
 /* || MOBILE DEVICE */
 @media (max-width: 576px) {
   .header__nav,
@@ -284,10 +442,48 @@ main {
     width: 100%;
     margin-top: 15rem;
   }
+
+  /* Online game */
+  .adventure__card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .adventure__card {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  /* NO DOWNLOADS */
+
+  .no-download .no-download__img-wrapper {
+    width: 80%;
+    margin-left: auto;
+  }
+
+  .no-download__child-img {
+    left: -15rem;
+    width: 70%;
+    margin-left: 5rem;
+  }
 }
 
 @media (max-width: 400px) {
   body {
     font-size: 10px !important;
+  }
+
+  /* Online game */
+  .adventure {
+    text-align: left;
+  }
+
+  .adventure h2 {
+    margin-bottom: -0.1rem;
+  }
+
+  /* no download */
+  .no-download .no-download__img-wrapper {
+    width: 69%;
+    margin-left: auto;
   }
 }
