@@ -1,0 +1,23 @@
+
+/* ============================= */
+/* || LT - Laptop & Small desktop */
+@media (min-width: 1200px) and (max-width: 1599px) {
+      .container {
+        width: 1170px;
+      }
+    }
+    
+    /* || TL - Tablet (landscape) */
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      .container {
+        width: 962px;
+      }
+    }
+    
+    /* || TM - Tablet (portrait) */
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .container {
+        width: 100%;
+      }
+    }
+    

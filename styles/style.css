@@ -1,0 +1,121 @@
+/* || FONT LINK (work sans) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;500;600;700;800&display=swap");
+
+body {
+  font-family: Arial;
+  font-size: 19px;
+  line-height: 1.5em;
+}
+
+:root {
+  /* || THEME COLORS */
+  --clr-primary: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+  --clr-secondary: #4ec5f7;
+  --title-gradient: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  --clr-black: #0b0223;
+  --desc-txt-clr: #534c64;
+  --footer-bg: #0b0223;
+  --footer-light-txt: rgba(255, 255, 255, 0.6);
+
+  /* || TYPOGRAPHY */
+  --ff: "Work Sans";
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-800: 800;
+}
+
+/* || REUSABLE STYLES FOR HEADINGS */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Arial;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 33px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 21px;
+}
+
+h6 {
+  font-size: 19px;
+}
+
+/* || CUSTOM BUTTON STYLES */
+.cta {
+  background-color: var(--clr-primary);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.cta:hover {
+  background-color: var(--clr-secondary);
+}
+
+/* || REUSABLE STYLES FOR DESCRIPTION CLASS */
+.description {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--desc-txt-clr);
+  margin-bottom: 10px;
+}
+
+/* ============ */
+
+.box-shadow {
+  box-shadow: 0px 0px 6.25px 6.25px rgba(0, 0, 0, 0.03);
+}
+/* ================ */
+.txt-center {
+  text-align: center;
+}
+
+/* || DT - Desktop */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.col {
+  flex-basis: 0px;
+  flex-grow: 1;
+}
+
+main {
+  margin-top: 50px;
+}
+
+/* ========================= header ============================== */
