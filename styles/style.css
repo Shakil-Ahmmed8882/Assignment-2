@@ -32,6 +32,7 @@
   --lh--hard: 1.1;
 }
 
+/* Typography Styles */
 .clr-primary {
   color: var(--clr-primary);
 }
@@ -65,7 +66,7 @@ body {
   min-width: 300px;
 }
 
-/* || REUSABLE STYLES FOR HEADINGS */
+/* Reusable Styles for Headings */
 h1,
 h2,
 h3,
@@ -106,7 +107,7 @@ img {
   max-width: 100%;
 }
 
-/* || CUSTOM BUTTON STYLES */
+/* Custom Button Styles */
 .cta {
   background-color: var(--clr-primary);
   color: white;
@@ -124,7 +125,7 @@ img {
   color: #fff;
 }
 
-/* || REUSABLE STYLES FOR DESCRIPTION CLASS */
+/* Reusable Styles for Description Class */
 .description {
   font-size: 16px;
   line-height: 1.5;
@@ -132,9 +133,7 @@ img {
   margin-bottom: 10px;
 }
 
-/* ============ */
-
-/* ======== aligning text ======== */
+/* Aligning Text */
 .txt-center {
   text-align: center;
 }
@@ -147,7 +146,7 @@ img {
   text-align: right;
 }
 
-/* || DT - Desktop */
+/* DT - Desktop */
 .container {
   max-width: 1000px;
   margin: 0 auto;
@@ -189,7 +188,7 @@ main {
   margin-bottom: 2rem;
 }
 
-/* ========================= || HEADER SECTION STYLES============================== */
+/* HEADER SECTION STYLES */
 .header__nav {
   justify-content: space-between;
   height: 80px;
@@ -228,7 +227,7 @@ main {
   font-size: 2rem;
 }
 
-/*==================== || BANNER SECTION STYLES ================= */
+/* BANNER SECTION STYLES */
 .banner {
   justify-content: space-between;
   padding: 0 20px;
@@ -264,6 +263,7 @@ main {
 .banner__instructions > * {
   margin: 1.5rem 0;
 }
+
 .banner__item {
   justify-content: flex-start;
 }
@@ -278,16 +278,16 @@ main {
   flex-shrink: 0;
 }
 
-/*==================== || BANNER SECTION STYLES ENDS ================= */
-
-/* ============  GAMER SECTION STYLES STARTS==================== */
+/* GAMER SECTION STYLES */
 .we-gamer {
   flex-wrap: wrap;
   text-align: right;
 }
+
 .we-gamer > div {
   flex-basis: 55%;
 }
+
 .we-gamer > article {
   flex-basis: 40%;
 }
@@ -295,6 +295,7 @@ main {
 .we-gamer__content .description {
   font-size: 1.4rem;
 }
+
 .we-gamer__content .unleash-the-gamer {
   font-size: 2.3rem;
   color: #534c64;
@@ -305,10 +306,7 @@ b {
   margin: 0.5rem 0;
 }
 
-/* ============  GAMER SECTION STYLES ENDS==================== */
-
-/*==================== || ADVENTURE SECTION STYLES STARTS================= */
-
+/* ADVENTURE SECTION STYLES */
 .adventure {
   text-align: center;
 }
@@ -338,9 +336,11 @@ b {
 }
 
 .adventure__card img {
+  width: 100%;
+  height: auto;
 }
 
-/* ============ || PLAY BUTTON STYLES ==================== */
+/* PLAY BUTTON STYLES */
 .adventure__card-container {
   display: flex;
   justify-content: space-between;
@@ -409,9 +409,8 @@ b {
   color: #fff;
 }
 
-/* Adjust the color and transition properties for a smooth effect */
-
-/* Add style for 'Watch now' text overlay */
+/* ADJUST THE COLOR AND TRANSITION PROPERTIES FOR A SMOOTH EFFECT */
+/* ADD STYLE FOR 'WATCH NOW' TEXT OVERLAY */
 .card-overlay::after {
   content: "Watch now";
   display: flex;
@@ -434,11 +433,11 @@ b {
   opacity: 1;
 }
 
-/* ============  PLAY BUTTON STYLES ENDS ==================== */
-/* ============  NO DOWNLOAD STYLES STARTS ==================== */
+/* NO DOWNLOAD STYLES */
 .no-download {
   gap: 10rem;
 }
+
 .img-wall {
   margin: 0 2rem;
 }
@@ -468,8 +467,8 @@ b {
 .no-download__child-img {
   width: clamp(180px, 5vh, 250px);
 }
-/* ============  NO DOWNLOAD STYLES ENDS==================== */
-/* ============  ADVENTURE ACTION STYLES STARTS==================== */
+
+/* ADVENTURE ACTION STYLES */
 .adventure-action {
   background: linear-gradient(
     90deg,
@@ -483,13 +482,14 @@ b {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1rem;
-  justify-items: center; /* Center items horizontally */
-  align-items: center; /* Center items vertically */
+  justify-items: center;
+  align-items: center;
 }
 
 .adventure__col img {
   width: 35px;
 }
+
 .adventure__col {
   padding: 1rem;
   border-radius: 40px;
@@ -502,12 +502,11 @@ b {
   transition: box-shadow 0.3s linear;
 }
 
-/* ============  ADVENTURE ACTfOPM STYLES ENDS==================== */
-/* ============  CAREERS STYLES STARTS==================== */
+/* CAREERS STYLES */
 .careers {
   background-color: var(--clr-primary);
   padding: 2rem 0;
-  border-radius:10px 10px;
+  border-radius: 10px 10px;
 }
 
 .careers__inner-container,
@@ -536,8 +535,8 @@ b {
   color: var(--clr-primary);
   margin-top: 2rem;
 }
-/* ============  CAREERS SECTION STYLES ENDS==================== */
-/* ============  FOOTER STYLES STARTS==================== */
+
+/* FOOTER STYLES */
 .footer {
   background-color: var(--footer-bg);
   padding: 5rem 0;
@@ -580,10 +579,15 @@ b {
   height: 5rem;
   border-radius: 50%;
   gap: 2rem;
+  transition: transform 0.2s linear;
 }
 
-.fa-youtube {
-  color: #ff0101;
+.social-icons > *:hover {
+  transform: scale(1.1);
+}
+
+.social-icons li:first-child {
+  background-color: #3374d4ca;
 }
 
 .fa-instagram {
@@ -601,6 +605,10 @@ b {
   color: transparent;
 }
 
+.fa-youtube {
+  color: red;
+}
+
 .fa-twitter {
   color: #1da1f2 !important;
 }
@@ -610,10 +618,10 @@ b {
   justify-self: center;
 }
 
-/* ============  FOOTER STYLES ENDS==================== */
-
-/* ============================ || BREAKPOINTS ===================== */
-/* || TM - Tablet (portrait) */
+/* ============================================ */
+/* =========================================== */
+/* BREAKPOINTS */
+/* Tablet (portrait) */
 @media (max-width: 900px) {
   html {
     font-size: 55%;
@@ -623,8 +631,7 @@ b {
     width: 100%;
   }
 
-  /* =========== banner area ============ */
-
+  /* BANNER AREA */
   .banner,
   .no-download,
   .careers__inner-container {
@@ -640,34 +647,37 @@ b {
     padding: 6.5rem 2rem;
     border-radius: 20px 20px 0 0;
   }
+
   .banner__img {
     margin-top: 5rem;
     width: 70%;
     margin-inline: auto;
   }
 
-  /* =========== we are gamer area ============ */
+  /* WE ARE GAMER AREA */
   .we-gamer {
     flex-direction: column;
     text-align: center;
     width: 90%;
   }
+
   .we-gamer * {
     margin: 1rem 0;
   }
 
-  /* =========== online games area ============ */
+  /* ONLINE GAMES AREA */
   .adventure__card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 4rem 2rem;
+    justify-content: stretch;
   }
 
   .adventure__card-container > * {
     justify-self: center;
   }
 
-  /* =========== no download area ============ */
-
+  /* NO DOWNLOAD AREA */
   .no-download-sec {
     padding: 6.5rem 2rem;
     background-color: rgba(227, 48, 140, 0.079);
@@ -683,7 +693,12 @@ b {
     width: 60%;
   }
 
-  /* ============== CAREERS ========== */
+  /* CAREERS */
+  .no-download {
+    width: 80%;
+    margin: 0 auto;
+  }
+
   .careers__inner-container {
     width: 80%;
     flex-direction: column;
@@ -694,6 +709,7 @@ b {
     width: 80%;
     margin: 0 auto;
   }
+
   .careers__content {
     flex-basis: 0;
   }
@@ -702,13 +718,13 @@ b {
     width: 80%;
     margin: 0 auto;
   }
-  /* gaming  hub */
 
+  /* GAMING HUB */
   .adventure-action-wrapper > * {
     justify-self: start;
   }
 
-  /* =========== footer area ============ */
+  /* FOOTER AREA */
   .inner-footer {
     width: 70%;
     margin: 0 auto;
@@ -736,6 +752,7 @@ b {
   .terms > * {
     text-align: center;
   }
+
   .social-icons > * {
     display: flex;
     align-items: center;
@@ -750,6 +767,7 @@ b {
 }
 
 @media (max-width: 850px) {
+  /* ONLINE GAME AREA */
   .adventure__card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -757,10 +775,10 @@ b {
     justify-content: stretch;
   }
 }
-/* || MOBILE DEVICE */
-@media (max-width: 576px) {
-  /* =========== header area ============ */
 
+/* MOBILE DEVICE */
+@media (max-width: 576px) {
+  /* HEADER AREA */
   .header__nav,
   .nav__list {
     flex-direction: column;
@@ -775,15 +793,14 @@ b {
     margin-top: 15rem;
   }
 
-  /* =========== we are gamer area ============ */
+  /* WE ARE GAMER AREA */
   .we-gamer {
     text-align: left;
     width: 100%;
     background-color: #0000000a;
   }
 
-  /* =========== online game area ============ */
-
+  /* ONLINE GAME AREA */
   .adventure__card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
@@ -794,8 +811,7 @@ b {
     margin-bottom: 3rem;
   }
 
-  /* =========== no download area ============ */
-
+  /* NO DOWNLOAD AREA */
   .no-download .no-download__img-wrapper {
     width: 80%;
     margin-left: auto;
@@ -807,16 +823,17 @@ b {
     margin-left: 5rem;
   }
 
-  /* =========== CAREERS ============ */
+  /* CAREERS */
   .no-download {
     width: 100%;
   }
+
   .careers__inner-container {
     padding: 0 1rem;
     width: 100%;
   }
-  /* =========== Adventure action / gaming hub ============ */
 
+  /* GAMING HUB */
   .adventure-action-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -836,7 +853,7 @@ b {
     font-size: 10px;
   }
 
-  /* ============ footer area ============= */
+  /* FOOTER AREA */
   .footer > * {
     font-size: 1.5rem;
   }
@@ -846,15 +863,13 @@ b {
   }
 }
 
-/* ============= 400 px Breakpoints ============== */
-
+/* 400 PX BREAKPOINTS */
 @media (max-width: 400px) {
   body {
     font-size: 10px !important;
   }
 
-  /* =========== online game area ============ */
-
+  /* ONLINE GAME AREA */
   .adventure {
     text-align: left;
   }
@@ -863,16 +878,16 @@ b {
     margin-bottom: -0.1rem;
   }
 
-  /* =========== no download area ============ */
-
+  /* NO DOWNLOAD AREA */
   .no-download .no-download__img-wrapper {
     width: 69%;
     margin-left: auto;
   }
 
-  /* ============= footer area =============== */
-
+  /* FOOTER AREA */
   .inner-footer {
     justify-content: space-between;
   }
 }
+
+/* Add any additional styles or changes as needed. */
