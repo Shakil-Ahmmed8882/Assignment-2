@@ -112,14 +112,16 @@ img {
   color: white;
   border: none;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 40px;
   font-size: 1.5rem;
   cursor: pointer;
   margin-block: 5px;
+  transition: all 0.2s linear;
 }
 
 .cta:hover {
-  background-color: var(--clr-secondary);
+  background-color: var(--clr-black);
+  color: #fff;
 }
 
 /* || REUSABLE STYLES FOR DESCRIPTION CLASS */
@@ -221,7 +223,10 @@ main {
 }
 
 .banner__content {
+  background-image: url("/B8A2-Gamer-Zone-main/images/Group\ 14.png");
   flex-shrink: 0;
+  flex-basis: 50%;
+  padding: 2rem;
 }
 
 .banner__h3-title {
@@ -243,7 +248,7 @@ main {
 }
 
 .banner__instructions > * {
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 .banner__item {
   justify-content: flex-start;
@@ -402,8 +407,10 @@ main {
 
 .adventure-action-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1rem;
+  justify-items: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
 }
 
 .adventure__col img {
@@ -496,6 +503,26 @@ main {
 }
 
 /* ============  FOOTER STYLES ENDS==================== */
+/* ============  GAMER SECTION STYLES STARTS==================== */
+.we-gamer {
+  flex-wrap: wrap;
+  text-align: right;
+}
+.we-gamer > div {
+  flex-basis: 55%;
+}
+.we-gamer > article {
+  flex-basis: 40%;
+}
+
+.we-gamer__content .description {
+  font-size: 1.4rem;
+}
+.we-gamer__content .unleash-the-gamer {
+  font-size: 2.3rem;
+  color: #534c64;
+}
+/* ============  GAMER SECTION STYLES ENDS==================== */
 
 /* ============================ || BREAKPOINTS ===================== */
 /* || TM - Tablet (portrait) */
@@ -530,6 +557,26 @@ main {
     margin-inline: auto;
   }
 
+  /* =========== we are gamer area ============ */
+  .we-gamer {
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+  }
+  .we-gamer * {
+    margin: 1rem 0;
+  }
+
+  /* =========== online games area ============ */
+  .adventure__card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  }
+
+  .adventure__card-container > * {
+    justify-self: center;
+  }
+
   /* =========== no download area ============ */
 
   .no-download__content {
@@ -545,6 +592,12 @@ main {
   .no-download__child-img {
     left: -15rem;
     width: 60%;
+  }
+
+  /* gaming  hub */
+
+  .adventure-action-wrapper > * {
+    justify-self: start;
   }
 
   /* =========== footer area ============ */
@@ -606,11 +659,18 @@ main {
     margin-top: 15rem;
   }
 
+  /* =========== we are gamer area ============ */
+  .we-gamer {
+    text-align: left;
+    width: 100%;
+    background-color: #0000000a;
+  }
+
   /* =========== online game area ============ */
 
   .adventure__card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
   }
 
   .adventure__card {
