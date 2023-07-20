@@ -434,12 +434,17 @@ b {
 }
 
 /* NO DOWNLOAD STYLES */
-.no-download {
-  gap: 10rem;
+.no-download-sec {
+  margin-block: 10rem;
 }
 
-.img-wall {
-  margin: 0 2rem;
+.no-download {
+  gap: 5rem;
+  display: grid; /* Use CSS Grid layout */
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
 }
 
 .no-download__content {
@@ -451,21 +456,22 @@ b {
 }
 
 .no-download__img-wrapper {
+  display: grid;
+  justify-content: center;
   position: relative;
 }
 
 .no-download__parent-img {
   position: relative;
+  width: clamp(300px, 5vh, 700px);
+  display: grid;
 }
 
 .no-download__child-img {
+  width: clamp(180px, 5vh, 400px);
   position: absolute;
-  bottom: -5rem;
-  left: -9rem;
-}
-
-.no-download__child-img {
-  width: clamp(180px, 5vh, 250px);
+  bottom: -50px;
+  left: -50px;
 }
 
 /* ADVENTURE ACTION STYLES */
@@ -506,7 +512,7 @@ b {
 .careers {
   background-color: var(--clr-primary);
   padding: 2rem 0;
-  border-radius: 10px 10px;
+  border-radius: 10px 10px 0 0;
 }
 
 .careers__inner-container,
@@ -633,7 +639,6 @@ b {
 
   /* BANNER AREA */
   .banner,
-  .no-download,
   .careers__inner-container {
     padding: 0;
     flex-direction: column-reverse;
@@ -677,28 +682,14 @@ b {
     justify-self: center;
   }
 
-  /* NO DOWNLOAD AREA */
-  .no-download-sec {
-    padding: 6.5rem 2rem;
-    background-color: rgba(227, 48, 140, 0.079);
-  }
-
-  .no-download .no-download__img-wrapper {
-    width: 70%;
-    margin-left: auto;
-  }
-
-  .no-download__child-img {
-    left: -15rem;
-    width: 60%;
+  /* NO DOWNLOAD STYLES */
+  .grid-container {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 20px;
   }
 
   /* CAREERS */
-  .no-download {
-    width: 80%;
-    margin: 0 auto;
-  }
-
   .careers__inner-container {
     width: 80%;
     flex-direction: column;
@@ -776,6 +767,32 @@ b {
   }
 }
 
+@media (max-width: 762px) {
+  .no-download {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .no-download__parent-img {
+    position: relative;
+    width: 70%;
+    display: grid;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .grid-center {
+    justify-self: center;
+  }
+
+  .no-download__child-img {
+    width: clamp(150px, 10vh, 700px);
+    position: absolute;
+    bottom: -50px;
+    left: -50px;
+  }
+}
+
 /* MOBILE DEVICE */
 @media (max-width: 576px) {
   /* HEADER AREA */
@@ -809,18 +826,6 @@ b {
   .adventure__card {
     width: 100%;
     margin-bottom: 3rem;
-  }
-
-  /* NO DOWNLOAD AREA */
-  .no-download .no-download__img-wrapper {
-    width: 80%;
-    margin-left: auto;
-  }
-
-  .no-download__child-img {
-    left: -15rem;
-    width: 70%;
-    margin-left: 5rem;
   }
 
   /* CAREERS */
@@ -879,9 +884,20 @@ b {
   }
 
   /* NO DOWNLOAD AREA */
-  .no-download .no-download__img-wrapper {
-    width: 69%;
-    margin-left: auto;
+  .no-download {
+    text-align: left;
+    padding: 0 10px;
+  }
+  .no-download__parent-img {
+    width: 80%;
+    margin-left: 50px;
+  }
+
+  .no-download__child-img {
+    width: clamp(150px, 10vh, 500px);
+    position: absolute;
+    bottom: -60px;
+    left: -50px;
   }
 
   /* FOOTER AREA */

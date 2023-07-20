@@ -1,296 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GameZone</title>
-  <!-- favicon -->
-  <link rel="shortcut icon" href="./B8A2-Gamer-Zone-main/images/Frame.png" type="image/x-icon">
-  <!-- font awesome (cdn) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- css file -->
-  <link rel="stylesheet" href="./styles/style.css" />
-</head>
-<body>
-  <!-- ==================== |HEADER SECTION STARTS ================= -->
-  <header class="container header">
-    <nav class="header__nav flex">
-      <div class="nav__logo flex">
-        <img src="./B8A2-Gamer-Zone-main/images/Frame.png" alt="logo__img" class="logo__img" />
-        <div class="gamer">
-          <span class="clr-primary" style="font-size: 20px">G</span>amer
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameZone</title>
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./B8A2-Gamer-Zone-main/images/Frame.png"
+      type="image/x-icon" />
+    <!-- font awesome (cdn) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <!-- css file -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <!-- ==================== |HEADER SECTION STARTS ================= -->
+    <header class="container header">
+      <nav class="header__nav flex">
+        <div class="nav__logo flex">
+          <img
+            src="./B8A2-Gamer-Zone-main/images/Frame.png"
+            alt="logo__img"
+            class="logo__img" />
+          <div class="gamer">
+            <span class="clr-primary" style="font-size: 20px">G</span>amer
+          </div>
         </div>
+        <ul class="nav__list flex">
+          <li class="nav__item"><a href="" class="nav__link">About us</a></li>
+          <li class="nav__item"><a href="" class="nav__link">Developers</a></li>
+          <li class="nav__item special">
+            <a
+              href="https://www.tiktok.com/"
+              class="nav__link nav__link-icons flex">
+              <p>Follow us</p>
+              <i class="fa-brands fa-youtube"></i>
+              <i class="fa-brands fa-tiktok tiktok-icon"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- ==================== || HEADER SECTION ENDS ================= -->
+
+    <!-- ==================== || BANNER SECTION STARTS ================= -->
+    <section class="banner container flex">
+      <article class="banner__content">
+        <h3 class="banner__h3-title">Play like the</h3>
+        <h1 class="banner__h1-title gradient-txt">G.O.A.T</h1>
+        <ul class="banner__instructions">
+          <li class="banner__item flex description">
+            <img src="./B8A2-Gamer-Zone-main/icons/video.svg" alt="" />1-Click
+            instant play
+          </li>
+          <li class="banner__item flex description">
+            <img src="./B8A2-Gamer-Zone-main/icons/download.svg" alt="" />No
+            Download
+          </li>
+          <li class="banner__item flex description">
+            <img src="./B8A2-Gamer-Zone-main/icons/social.svg" alt="" />1000s of
+            supported online games
+          </li>
+        </ul>
+        <button class="cta">SIGN IN</button>
+        <button class="cta banner__btn--secondary">Go Rogue</button>
+      </article>
+      <div class="banner__img">
+        <img src="./B8A2-Gamer-Zone-main/images/Group 18.png" alt="" />
       </div>
-      <ul class="nav__list flex">
-        <li class="nav__item"><a href="" class="nav__link">About us</a></li>
-        <li class="nav__item"><a href="" class="nav__link">Developers</a></li>
-        <li class="nav__item special">
-          <a href="https://www.tiktok.com/" class="nav__link nav__link-icons flex">
-            <p>Follow us</p>
-            <i class="fa-brands fa-youtube"></i>
-            <i class="fa-brands fa-tiktok tiktok-icon"></i>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <!-- ==================== || HEADER SECTION ENDS ================= -->
-  
-  <!-- ==================== || BANNER SECTION STARTS ================= -->
-  <section class="banner container flex">
-    <article class="banner__content">
-      <h3 class="banner__h3-title">Play like the</h3>
-      <h1 class="banner__h1-title gradient-txt">G.O.A.T</h1>
-      <ul class="banner__instructions">
-        <li class="banner__item flex description">
-          <img src="./B8A2-Gamer-Zone-main/icons/video.svg" alt="" />1-Click
-          instant play
-        </li>
-        <li class="banner__item flex description">
-          <img src="./B8A2-Gamer-Zone-main/icons/download.svg" alt="" />No
-          Download
-        </li>
-        <li class="banner__item flex description">
-          <img src="./B8A2-Gamer-Zone-main/icons/social.svg" alt="" />1000s of
-          supported online games
-        </li>
-      </ul>
-      <button class="cta">SIGN IN</button>
-      <button class="cta banner__btn--secondary">Go Rogue</button>
-    </article>
-    <div class="banner__img">
-      <img src="./B8A2-Gamer-Zone-main/images/Group 18.png" alt="" />
-    </div>
-  </section>
-  <!-- ==================== || BANNER SECTION ENDS ================= -->
-  
-  <!-- ==================== || WE ARE GAMER SECTION STARTS ================= -->
-  <section class="container we-gamer flex margin">
-    <div class="we-gamer__img-wrap"><img src="./B8A2-Gamer-Zone-main/images/pngwing 4.png" alt=""></div>
-    <article class="we-gamer__content">
-      <h2 class="gradient-txt">We are gamer</h2>
-      <p class="description">An international digital games and entertainment company. We develop, publish and distribute multiplayer mobile games. We reach over 400 million players each month and our audience keeps growing.</p>
-      <button class="cta">Know more</button><br><b style="font-weight: 400;">Our purpose...</b>
-      <h2 class="unleash-the-gamer">
-        “unleash the gamer in everyone”
+    </section>
+    <!-- ==================== || BANNER SECTION ENDS ================= -->
+
+    <!-- ==================== || WE ARE GAMER SECTION STARTS ================= -->
+    <section class="container we-gamer flex margin">
+      <div class="we-gamer__img-wrap">
+        <img src="./B8A2-Gamer-Zone-main/images/pngwing 4.png" alt="" />
+      </div>
+      <article class="we-gamer__content">
+        <h2 class="gradient-txt">We are gamer</h2>
+        <p class="description">
+          An international digital games and entertainment company. We develop,
+          publish and distribute multiplayer mobile games. We reach over 400
+          million players each month and our audience keeps growing.
+        </p>
+        <button class="cta">Know more</button><br /><b style="font-weight: 400"
+          >Our purpose...</b
+        >
+        <h2 class="unleash-the-gamer">“unleash the gamer in everyone”</h2>
+      </article>
+    </section>
+    <!-- ==================== || WE ARE GAMER SECTION ENDS ================= -->
+
+    <!-- ==================== || ONLINE GAME SECTION STARTS ================= -->
+    <section class="container adventure margin">
+      <h2 class="adventure__title">
+        Online Games <span class="gradient-txt">Funny Videos</span>
       </h2>
-    </article>
-  </section>
-  <!-- ==================== || WE ARE GAMER SECTION ENDS ================= -->
-  
-  <!-- ==================== || ONLINE GAME SECTION STARTS ================= -->
-  <section class="container adventure margin">
-    <h2 class="adventure__title">
-      Online Games <span class="gradient-txt">Funny Videos</span>
-    </h2>
-    <p class="description">
-      A Collection of Hilarious Videos to Brighten Your Day
-    </p>
-    <div class="adventure__card-container">
-      <!-- First Card -->
-      <div class="adventure__card">
-        <div class="card-overlay" data-text="Watch now"></div>
-        <img src="./B8A2-Gamer-Zone-main/images/Rectangle 4.png" alt="video gamer" />
-        <p class="description">
-          No Download. No Installs. Play games Instantly on Gamer.
-        </p>
-        <div class="play-button">
-          <!-- Replace the button symbol with the Font Awesome play button icon -->
-          <span class="play-icon"><i class="fas fa-play"></i></span>
+      <p class="description">
+        A Collection of Hilarious Videos to Brighten Your Day
+      </p>
+      <div class="adventure__card-container">
+        <!-- First Card -->
+        <div class="adventure__card">
+          <div class="card-overlay" data-text="Watch now"></div>
+          <img
+            src="./B8A2-Gamer-Zone-main/images/Rectangle 4.png"
+            alt="video gamer" />
+          <p class="description">
+            No Download. No Installs. Play games Instantly on Gamer.
+          </p>
+          <div class="play-button">
+            <!-- Replace the button symbol with the Font Awesome play button icon -->
+            <span class="play-icon"><i class="fas fa-play"></i></span>
+          </div>
         </div>
-      </div>
 
-      <!-- Second Card -->
-      <div class="adventure__card">
-        <div class="card-overlay"></div>
-        <img src="./B8A2-Gamer-Zone-main/images/Rectangle 5.png" alt="video gamer" />
-        <p class="description">
-          No Download. No Installs. Play games Instantly on Gamer.
-        </p>
-        <div class="play-button">
-          <!-- Replace the button symbol with the Font Awesome play button icon -->
-          <span class="play-icon"><i class="fas fa-play"></i></span>
+        <!-- Second Card -->
+        <div class="adventure__card">
+          <div class="card-overlay"></div>
+          <img
+            src="./B8A2-Gamer-Zone-main/images/Rectangle 5.png"
+            alt="video gamer" />
+          <p class="description">
+            No Download. No Installs. Play games Instantly on Gamer.
+          </p>
+          <div class="play-button">
+            <!-- Replace the button symbol with the Font Awesome play button icon -->
+            <span class="play-icon"><i class="fas fa-play"></i></span>
+          </div>
         </div>
-      </div>
 
-      <!-- Third Card -->
-      <div class="adventure__card">
-        <div class="card-overlay"></div>
-        <img src="./B8A2-Gamer-Zone-main/images/Rectangle 6.png" alt="video gamer" />
-        <p class="description">
-          No Download. No Installs. Play games Instantly on Gamer.
-        </p>
-        <div class="play-button">
-          <!-- Replace the button symbol with the Font Awesome play button icon -->
-          <span class="play-icon"><i class="fas fa-play"></i></span>
+        <!-- Third Card -->
+        <div class="adventure__card">
+          <div class="card-overlay"></div>
+          <img
+            src="./B8A2-Gamer-Zone-main/images/Rectangle 6.png"
+            alt="video gamer" />
+          <p class="description">
+            No Download. No Installs. Play games Instantly on Gamer.
+          </p>
+          <div class="play-button">
+            <!-- Replace the button symbol with the Font Awesome play button icon -->
+            <span class="play-icon"><i class="fas fa-play"></i></span>
+          </div>
         </div>
-      </div>
 
-      <!-- Fourth Card -->
-      <div class="adventure__card">
-        <div class="card-overlay"></div>
-        <img src="./B8A2-Gamer-Zone-main/images/Rectangle 7.png" alt="video gamer" />
-        <p class="description">
-          No Download. No Installs. Play games Instantly on Gamer.
-        </p>
-        <div class="play-button">
-          <!-- Replace the button symbol with the Font Awesome play button icon -->
-          <span class="play-icon"><i class="fas fa-play"></i></span>
+        <!-- Fourth Card -->
+        <div class="adventure__card">
+          <div class="card-overlay"></div>
+          <img
+            src="./B8A2-Gamer-Zone-main/images/Rectangle 7.png"
+            alt="video gamer" />
+          <p class="description">
+            No Download. No Installs. Play games Instantly on Gamer.
+          </p>
+          <div class="play-button">
+            <!-- Replace the button symbol with the Font Awesome play button icon -->
+            <span class="play-icon"><i class="fas fa-play"></i></span>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- ==================== || ONLINE SECTION ENDS ================= -->
-  
-  <!-- ==================== || NO DOWNLOAD SECTION STARTS ================= -->
-  <section class="no-download-sec">
-    <div class="no-download flex container margin">
-      <div class="no-download__content">
-        <h2 class="gradient-txt">Play Instantly</h2>
-        <h2>No Download No Installs</h2>
-        <p class="description">
-          Play games online for free without downloading. Just click the Play
-          button and play instantly in your browser.
-        </p>
-      </div>
-      <div class="img-wall">
-        <div class="no-download__img-wrapper">
-          <div class="no-download__parent-img">
-            <img src="./B8A2-Gamer-Zone-main/images/Rectangle 55.png" alt="" />
-            <div class="no-download__child-img">
-              <img src="./B8A2-Gamer-Zone-main/images/Rectangle 66.png" alt="" />
+    </section>
+    <!-- ==================== || ONLINE SECTION ENDS ================= -->
+
+    <!-- ==================== || NO DOWNLOAD SECTION STARTS ================= -->
+    <section class="no-download-sec">
+      <div class="no-download grid-container container">
+        <div class="no-download__content">
+          <div class="no-download__content">
+            <h2 class="gradient-txt">Play Instantly</h2>
+            <h2>No Download No Installs</h2>
+            <p class="description">
+              Play games online for free without downloading. Just click the
+              Play button and play instantly in your browser.
+            </p>
+          </div>
+        </div>
+        <div class="img-wall">
+          <div class="no-download__img-wrapper">
+            <div class="no-download__parent-img">
+              <img
+                src="./B8A2-Gamer-Zone-main/images/Rectangle 55.png"
+                alt="" class="grid-center"/>
+              <img
+                src="./B8A2-Gamer-Zone-main/images/Rectangle 66.png"
+                alt=""
+                class="no-download__child-img" />
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- ==================== || No DOWNLOAD SECTION ENDS ================= -->
-  
-  <!-- ==================== || Careers SECTION STARTS ================= -->
-  <section class="careers">
-    <article class="careers__inner-container flex container">
-      <div class="careers__content">
-        <h2>Careers</h2>
-        <p class="careers__description">Gamer is driven to create the best and most fun games for our millions of players all around the world, and we're always on the lookout for more top talent to join our growing team. If you'd like to help us make great games and be a part of Gamer's bright future, we'd love to hear from you.</p>
-        
-        <article class="career__list-container flex flex-between">
-          <ul class="career__list">
-            <li class="career__item multimedia-artist">Multimedia Artist</li>
-            <li class="career__item data-engineer">Data Engineer</li>
-            <li class="career__item android-engineer">Android Engineer</li>
-            <li class="career__item server-developer">Server Developer</li>
-            <li class="career__item group-financial-accountant">Group Financial Accountant</li>
-            <li class="career__item senior-user-acquisition-specialist">Senior User Acquisition Specialist</li>
-            <button class="cta careers__btn--primary">See all positions</button>
-          </ul>
-          <ul class="career__list txt-right">
-            <li class="career__item">Lisbon, Portugal</li>
-            <li class="career__item">Lisbon, Portugal</li>
-            <li class="career__item">Zoetermeer, Netherlands</li>
-            <li class="career__item">Lisbon, Portugal</li>
-            <li class="career__item">London, United Kingdom</li>
-            <li class="career__item">Lisbon, Portugal</li>
-          </ul>                        
-        </article>
-      </div>
-      <!-- careers img -->
-      <div class="careers__img-wrapper">
-        <img src="./B8A2-Gamer-Zone-main/images/Group 65.png" alt="Career plan" class="career__img">
-      </div>
-    </article>
-  </section>
-  <!-- ==================== || Careers SECTION ENDS ================= -->
-  
-  <!-- ==================== || ADVENTURE SECTION STARTS ================= -->
-  <section class="adventure-action">
-    <div class="container adventure-action-wrapper">
-      <div class="adventure__col flex">
-        <img src="./B8A2-Gamer-Zone-main/images/Rectangle 11.png" alt="Adventure Action" />
-        <h6>Action Games</h6>
-      </div>
-      <!--  -->
-      <div class="adventure__col flex">
-        <img src="./B8A2-Gamer-Zone-main/images/Rectangle 12.png" alt="Adventure Action" />
-        <h6>Adventure Games</h6>
-      </div>
-      <!--  -->
-      <div class="adventure__col flex">
-        <img src="./B8A2-Gamer-Zone-main/images/Rectangle 13.png" alt="Adventure Action" />
-        <h6>Arcade Games</h6>
-      </div>
-      <!--  -->
-      <div class="adventure__col flex">
-        <img src="./B8A2-Gamer-Zone-main/images/Rectangle 14.png" alt="Adventure Action" />
-        <h6>Educational Games</h6>
-      </div>
-      <!--  -->
-      <div class="adventure__col flex">
-        <img src="./B8A2-Gamer-Zone-main/images/Rectangle 15.png" alt="Adventure Action" />
-        <h6>Word Games</h6>
-      </div>
-      <!--  -->
-      <div class="adventure__col flex">
-        <img src="./B8A2-Gamer-Zone-main/images/Rectangle 16.png" alt="Adventure Action" />
-        <h6>Role Palying Games</h6>
-      </div>
-      <!--  -->
-      <div class="adventure__col flex">
-        <img src="./B8A2-Gamer-Zone-main/images/Rectangle 17.png" alt="Adventure Action" />
-        <h6>Music & Audio Games</h6>
-      </div>
-      <!--  -->
-      <div class="adventure__col flex">
-        <img src="./B8A2-Gamer-Zone-main/images/Rectangle 18.png" alt="Adventure Action" />
-        <h6>Puzzle Games</h6>
-      </div>
-      <!--  -->
-      <div class="adventure__col flex">
-        <img src="./B8A2-Gamer-Zone-main/images/Rectangle 19.png" alt="Adventure Action" />
-        <h6>Strategy Games</h6>
-      </div>
-    </div>
-  </section>
-  <!-- ==================== || ADVENTURE SECTION ENDS ================= -->
-  
-  <!-- ==================== || FOOTER SECTION STARTS ================= -->
-  <footer class="footer">
-    <div class="inner-footer">
-      <div class="nav__logo footer__logo flex" style="width: em; margin: 2rem auto;">
-        <img src="./B8A2-Gamer-Zone-main/images/Frame.png" alt="logo__img" class="logo__img" />
-        <div class="gamer" style="color: #fff;">
-          <span class="clr-primary" style="font-size: 20px">G</span>amer
+    </section>
+
+    <!-- ==================== || No DOWNLOAD SECTION ENDS ================= -->
+
+    <!-- ==================== || Careers SECTION STARTS ================= -->
+    <section class="careers">
+      <article class="careers__inner-container flex container">
+        <div class="careers__content">
+          <h2>Careers</h2>
+          <p class="careers__description">
+            Gamer is driven to create the best and most fun games for our
+            millions of players all around the world, and we're always on the
+            lookout for more top talent to join our growing team. If you'd like
+            to help us make great games and be a part of Gamer's bright future,
+            we'd love to hear from you.
+          </p>
+
+          <article class="career__list-container flex flex-between">
+            <ul class="career__list">
+              <li class="career__item multimedia-artist">Multimedia Artist</li>
+              <li class="career__item data-engineer">Data Engineer</li>
+              <li class="career__item android-engineer">Android Engineer</li>
+              <li class="career__item server-developer">Server Developer</li>
+              <li class="career__item group-financial-accountant">
+                Group Financial Accountant
+              </li>
+              <li class="career__item senior-user-acquisition-specialist">
+                Senior User Acquisition Specialist
+              </li>
+              <button class="cta careers__btn--primary">
+                See all positions
+              </button>
+            </ul>
+            <ul class="career__list txt-right">
+              <li class="career__item">Lisbon, Portugal</li>
+              <li class="career__item">Lisbon, Portugal</li>
+              <li class="career__item">Zoetermeer, Netherlands</li>
+              <li class="career__item">Lisbon, Portugal</li>
+              <li class="career__item">London, United Kingdom</li>
+              <li class="career__item">Lisbon, Portugal</li>
+            </ul>
+          </article>
+        </div>
+        <!-- careers img -->
+        <div class="careers__img-wrapper">
+          <img
+            src="./B8A2-Gamer-Zone-main/images/Group 65.png"
+            alt="Career plan"
+            class="career__img" />
+        </div>
+      </article>
+    </section>
+    <!-- ==================== || Careers SECTION ENDS ================= -->
+
+    <!-- ==================== || ADVENTURE SECTION STARTS ================= -->
+    <section class="adventure-action">
+      <div class="container adventure-action-wrapper">
+        <div class="adventure__col flex">
+          <img
+            src="./B8A2-Gamer-Zone-main/images/Rectangle 11.png"
+            alt="Adventure Action" />
+          <h6>Action Games</h6>
+        </div>
+        <!--  -->
+        <div class="adventure__col flex">
+          <img
+            src="./B8A2-Gamer-Zone-main/images/Rectangle 12.png"
+            alt="Adventure Action" />
+          <h6>Adventure Games</h6>
+        </div>
+        <!--  -->
+        <div class="adventure__col flex">
+          <img
+            src="./B8A2-Gamer-Zone-main/images/Rectangle 13.png"
+            alt="Adventure Action" />
+          <h6>Arcade Games</h6>
+        </div>
+        <!--  -->
+        <div class="adventure__col flex">
+          <img
+            src="./B8A2-Gamer-Zone-main/images/Rectangle 14.png"
+            alt="Adventure Action" />
+          <h6>Educational Games</h6>
+        </div>
+        <!--  -->
+        <div class="adventure__col flex">
+          <img
+            src="./B8A2-Gamer-Zone-main/images/Rectangle 15.png"
+            alt="Adventure Action" />
+          <h6>Word Games</h6>
+        </div>
+        <!--  -->
+        <div class="adventure__col flex">
+          <img
+            src="./B8A2-Gamer-Zone-main/images/Rectangle 16.png"
+            alt="Adventure Action" />
+          <h6>Role Palying Games</h6>
+        </div>
+        <!--  -->
+        <div class="adventure__col flex">
+          <img
+            src="./B8A2-Gamer-Zone-main/images/Rectangle 17.png"
+            alt="Adventure Action" />
+          <h6>Music & Audio Games</h6>
+        </div>
+        <!--  -->
+        <div class="adventure__col flex">
+          <img
+            src="./B8A2-Gamer-Zone-main/images/Rectangle 18.png"
+            alt="Adventure Action" />
+          <h6>Puzzle Games</h6>
+        </div>
+        <!--  -->
+        <div class="adventure__col flex">
+          <img
+            src="./B8A2-Gamer-Zone-main/images/Rectangle 19.png"
+            alt="Adventure Action" />
+          <h6>Strategy Games</h6>
         </div>
       </div>
-      <nav>
-        <ul class="footer__list flex">
-          <li class="footer__item "><a class="text-fff" href="#">Our Story</a></li>
-          <li class="footer__item "><a class="text-fff" href="#">Games</a></li>
-          <li class="footer__item "><a class="text-fff" href="#">Web Games</a></li>
-          <li class="footer__item "><a class="text-fff" href="#">Careers</a></li>
-          <li class="footer__item "><a class="text-fff" href="#">Support</a></li>
-          <li class="footer__item "><a class="text-fff" href="#">My Account</a></li>
+    </section>
+    <!-- ==================== || ADVENTURE SECTION ENDS ================= -->
+
+    <!-- ==================== || FOOTER SECTION STARTS ================= -->
+    <footer class="footer">
+      <div class="inner-footer">
+        <div
+          class="nav__logo footer__logo flex"
+          style="width: em; margin: 2rem auto">
+          <img
+            src="./B8A2-Gamer-Zone-main/images/Frame.png"
+            alt="logo__img"
+            class="logo__img" />
+          <div class="gamer" style="color: #fff">
+            <span class="clr-primary" style="font-size: 20px">G</span>amer
+          </div>
+        </div>
+        <nav>
+          <ul class="footer__list flex">
+            <li class="footer__item">
+              <a class="text-fff" href="#">Our Story</a>
+            </li>
+            <li class="footer__item"><a class="text-fff" href="#">Games</a></li>
+            <li class="footer__item">
+              <a class="text-fff" href="#">Web Games</a>
+            </li>
+            <li class="footer__item">
+              <a class="text-fff" href="#">Careers</a>
+            </li>
+            <li class="footer__item">
+              <a class="text-fff" href="#">Support</a>
+            </li>
+            <li class="footer__item">
+              <a class="text-fff" href="#">My Account</a>
+            </li>
+          </ul>
+        </nav>
+        <nav>
+          <ul class="social-icons flex">
+            <li>
+              <a href="#"><i class="fab text-fff fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab text-fff fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab text-fff fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab text-fff fa-apple"></i></a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="footer__list terms flex mg-bottom">
+          <li class="footer__item">
+            <a class="txt-gray" href="#">Terms and Conditions</a>
+          </li>
+          <li class="footer__item">
+            <a class="txt-gray" href="#">Privacy Policy</a>
+          </li>
+          <li class="footer__item">
+            <a class="txt-gray" href="#">Cookie Policy</a>
+          </li>
+          <li class="footer__item">
+            <a class="txt-gray" href="#">Privacy Settings</a>
+          </li>
         </ul>
-      </nav>
-      <nav>
-        <ul class="social-icons flex">
-          <li><a href="#"><i class="fab text-fff fa-facebook-f"></i></a></li>
-          <li><a href="#"><i class="fab text-fff fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="#"><i class="fab text-fff fa-linkedin-in"></i></a></li>
-          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-          <li><a href="#"><i class="fab text-fff fa-apple"></i></a></li>
-        </ul>
-      </nav>
-      <ul class="footer__list terms flex mg-bottom">
-        <li class="footer__item"><a class="txt-gray" href="#">Terms and Conditions</a></li>
-        <li class="footer__item"><a class="txt-gray" href="#">Privacy Policy</a></li>
-        <li class="footer__item"><a class="txt-gray" href="#">Cookie Policy</a></li>
-        <li class="footer__item"><a class="txt-gray" href="#">Privacy Settings</a></li>
-      </ul>
-      <p class="txt-gray txt-center lh-normal footer__copywright">&copy; Play Games @ Gamer @ 2000-2023 Gamer Bangladesh</p>
-    </div>
-  </footer>
-  <!-- ==================== || FOOTER SECTION ENDS ================= -->
-</body>
+        <p class="txt-gray txt-center lh-normal footer__copywright">
+          &copy; Play Games @ Gamer @ 2000-2023 Gamer Bangladesh
+        </p>
+      </div>
+    </footer>
+    <!-- ==================== || FOOTER SECTION ENDS ================= -->
+  </body>
 </html>
